@@ -1,0 +1,18 @@
+<h2>Angular 20 REST API Example (Standalone)</h2>
+
+<form (ngSubmit)="saveProduct()">
+  <input [(ngModel)]="product.name" name="name" placeholder="Product Name" required />
+  <input [(ngModel)]="product.price" name="price" type="number" placeholder="Price" required />
+  <button type="submit">{{ selectedProductId ? 'Update' : 'Add' }}</button>
+  <button type="button" (click)="resetForm()">Cancel</button>
+  <input [(ngModel)]="searchQuery" placeholder="Search..." />
+  <button (click)="search()">Search</button>
+</form>
+
+<ul>
+  <li *ngFor="let p of products">
+    {{ p.name }} - {{ p.price | currency }}
+    <button (click)="editProduct(p)">Edit</button>
+    <button (click)="deleteProduct(p._id)">Delete</button>
+  </li>
+</ul>
