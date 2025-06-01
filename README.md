@@ -1,6 +1,6 @@
 # Angular REST API and HttpClient Tutorial with Example
 
-Read full article [here]().
+Read full article [here](https://www.djamware.com/post/5d8d7fc10daa6c77eed3b2f2/angular-rest-api-and-httpclient-tutorial-with-example).
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
 
